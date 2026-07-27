@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "Histopathology Molecular Subtype Classification"
+message: "If you refer to this work, please cite it as below."
+type: software
+authors:
+  - family-names: Zanoni
+    given-names: Alessandro
+  - family-names: Valentini
+    given-names: Jacopo
+  - family-names: Balducci
+    given-names: Arianna
+  - family-names: Gallicola
+    given-names: Renato
+version: "1.0.0"
+date-released: "2025-12-16"
+license: MIT
+abstract: >-
+  Solution to the second challenge of the Artificial Neural Networks and Deep
+  Learning course (Politecnico di Milano, A.Y. 2025/26): classifying the
+  molecular subtype of human tissue from low-magnification whole-slide images.
+  Slides are cut into 256x256 tiles under a multiple-instance-learning framing
+  and classified by a weighted ensemble of a ResNet18 tile classifier, evaluated
+  under the full dihedral group at inference, and a linear head over frozen UNI
+  embeddings. The ensemble weight is selected by grid search on out-of-fold
+  slide probabilities.
+keywords:
+  - computational pathology
+  - whole-slide imaging
+  - multiple instance learning
+  - foundation models
+  - ensemble methods
+  - PyTorch

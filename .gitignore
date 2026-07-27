@@ -1,0 +1,48 @@
+# --- Dataset (not redistributable, and far over GitHub's size limits) --------
+data/train_data/
+data/test_data/
+data/train_labels.csv
+*.npz
+!artifacts/*.npz
+*.tif
+*.tiff
+*.svs
+
+# --- Cached embeddings and trained weights (see models/README.md) ------------
+*.npy
+!artifacts/**/*.npy
+*.pt
+*.pth
+*.ckpt
+
+# --- Training logs -----------------------------------------------------------
+runs/
+tensorboard/
+events.out.tfevents.*
+*.log
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Notebooks ---------------------------------------------------------------
+.ipynb_checkpoints/
+# Outputs are committed on purpose: they are the record of the submitted run.
+
+# --- Test / build caches -----------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Tooling / OS ------------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
